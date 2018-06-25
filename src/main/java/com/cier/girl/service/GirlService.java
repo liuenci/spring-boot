@@ -1,5 +1,6 @@
-package com.cier.girl;
+package com.cier.girl.service;
 
+import com.cier.girl.pojo.Girl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

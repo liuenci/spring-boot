@@ -1,4 +1,4 @@
-package com.cier.girl;
+package com.cier.girl.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

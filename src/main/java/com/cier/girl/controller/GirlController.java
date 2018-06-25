@@ -1,8 +1,13 @@
-package com.cier.girl;
+package com.cier.girl.controller;
 
+import com.cier.girl.service.GirlRepository;
+import com.cier.girl.service.GirlService;
+import com.cier.girl.pojo.Girl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -20,10 +25,12 @@ public class GirlController {
         return girlRepository.findAll();
     }
     @PostMapping(value = "/girls")
-    public Girl girlAdd(@RequestParam("cupSize") String cupSize,@RequestParam("age") Integer age){
-        Girl girl = new Girl();
-        girl.setCupSize(cupSize);
-        girl.setAge(age);
+    public Girl girlAdd(@Valid Girl girl,BindingResult binding){
+        if (binding.hasErrors()){
+            System.out.println(binding.getFieldError().getDefaultMessage());
+        }
+        girl.setCupSize(girl.getCupSize());
+        girl.setAge(girl.getAge());
         girlRepository.save(girl);
         return girl;
     }
