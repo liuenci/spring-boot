@@ -9,7 +9,8 @@ import java.util.List;
 public class GirlController {
     @Autowired
     public GirlRepository girlRepository;
-
+    @Autowired
+    public GirlService girlService;
     /**
      * 查询所有女生接口
      * @return
@@ -49,5 +50,9 @@ public class GirlController {
     @GetMapping(value = "/girls/age/{age}")
     public List<Girl> findGirlByAge(@PathVariable("age") Integer age){
         return girlRepository.findByAge(age);
+    }
+    @PostMapping(value = "/girls/two")
+    public void insertTwo(){
+        girlService.insertTwo();
     }
 }
