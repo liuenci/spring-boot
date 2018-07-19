@@ -3,6 +3,8 @@ package com.cier.girl.controller;
 import com.cier.girl.service.GirlRepository;
 import com.cier.girl.service.GirlService;
 import com.cier.girl.pojo.Girl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -16,12 +18,15 @@ public class GirlController {
     public GirlRepository girlRepository;
     @Autowired
     public GirlService girlService;
+
+    private static final Logger logger = LoggerFactory.getLogger(GirlController.class);
     /**
      * 查询所有女生接口
      * @return
      */
     @GetMapping(value = "/girls")
     public List<Girl> getGirlList(){
+        logger.info("girlList");
         return girlRepository.findAll();
     }
     @PostMapping(value = "/girls")
