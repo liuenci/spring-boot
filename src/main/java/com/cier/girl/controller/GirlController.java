@@ -1,8 +1,10 @@
 package com.cier.girl.controller;
 
+import com.cier.girl.pojo.Result;
 import com.cier.girl.service.GirlRepository;
 import com.cier.girl.service.GirlService;
 import com.cier.girl.pojo.Girl;
+import com.cier.girl.utils.ResultUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,33 +22,36 @@ public class GirlController {
     public GirlService girlService;
 
     private static final Logger logger = LoggerFactory.getLogger(GirlController.class);
+
     /**
      * 查询所有女生接口
+     *
      * @return
      */
     @GetMapping(value = "/girls")
-    public List<Girl> getGirlList(){
+    public List<Girl> getGirlList() {
         logger.info("girlList");
         return girlRepository.findAll();
     }
+
     @PostMapping(value = "/girls")
-    public Girl girlAdd(@Valid Girl girl,BindingResult binding){
-        if (binding.hasErrors()){
-            System.out.println(binding.getFieldError().getDefaultMessage());
+    public Result<Girl> girlAdd(@Valid Girl girl, BindingResult binding) {
+        if (binding.hasErrors()) {
+            return ResultUtil.error(1, binding.getFieldError().getDefaultMessage());
         }
         girl.setCupSize(girl.getCupSize());
         girl.setAge(girl.getAge());
-        girlRepository.save(girl);
-        return girl;
+
+        return ResultUtil.success(girlRepository.save(girl));
     }
 
     @GetMapping(value = "/girls/{id}")
-    public Girl findGirl(@PathVariable("id") Integer id){
+    public Girl findGirl(@PathVariable("id") Integer id) {
         return girlRepository.findOne(id);
     }
 
     @PutMapping(value = "/girls/{id}")
-    public Girl updateGirl(@PathVariable("id") Integer id,@RequestParam("cupSize") String cupSize,@RequestParam("age") Integer age){
+    public Girl updateGirl(@PathVariable("id") Integer id, @RequestParam("cupSize") String cupSize, @RequestParam("age") Integer age) {
         Girl girl = new Girl();
         girl.setId(id);
         girl.setCupSize(cupSize);
@@ -54,17 +59,24 @@ public class GirlController {
         girlRepository.save(girl);
         return girl;
     }
+
     @DeleteMapping(value = "/girls/{id}")
-    public void deleteGirl(@PathVariable("id") Integer id){
+    public void deleteGirl(@PathVariable("id") Integer id) {
         girlRepository.delete(id);
     }
 
     @GetMapping(value = "/girls/age/{age}")
-    public List<Girl> findGirlByAge(@PathVariable("age") Integer age){
+    public List<Girl> findGirlByAge(@PathVariable("age") Integer age) {
         return girlRepository.findByAge(age);
     }
+
     @PostMapping(value = "/girls/two")
-    public void insertTwo(){
+    public void insertTwo() {
         girlService.insertTwo();
+    }
+
+    @GetMapping(value = "girls/get_age/{id}")
+    public void getAge(@PathVariable("id") Integer id) throws Exception {
+        girlService.getAge(id);
     }
 }

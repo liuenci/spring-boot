@@ -34,4 +34,5 @@ public class HelloController {
     public String sayValue3(@RequestParam(value = "id",defaultValue = "0") Integer myId) {
         return "id="+myId;
     }
+
 }

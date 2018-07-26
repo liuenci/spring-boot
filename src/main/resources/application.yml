@@ -1,5 +1,5 @@
 server:
-  port: 8089
+  port: 8080
 spring:
   profiles:
     active: dev
@@ -15,8 +15,6 @@ spring:
     properties:
       hibernate.format_sql: true
 logging:
-  path: /log
   file: girl.log
   level: info
-
 
