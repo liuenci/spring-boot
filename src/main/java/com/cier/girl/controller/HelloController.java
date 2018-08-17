@@ -2,17 +2,18 @@ package com.cier.girl.controller;
 
 import com.cier.girl.properties.GirlProperties;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/hello")
 public class HelloController {
     @Autowired
     private GirlProperties girlProperties;
 
-    @RequestMapping(value = {"/hello", "/hi"}, method = RequestMethod.GET)
-    public String say() {
-        return girlProperties.getCupSize();
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    public String say(ModelMap map) {
+        map.addAttribute("host","ci");
+        return "views/index";
     }
 
     @RequestMapping(value = "{id}/say", method = RequestMethod.GET)
