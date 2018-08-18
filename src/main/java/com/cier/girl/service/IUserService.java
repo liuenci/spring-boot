@@ -13,8 +13,4 @@ public interface IUserService {
     SysUser queryUserById(String userId);
 
     PageInfo queryUserListPaged(Integer page, Integer pageSize);
-
-    SysUser queryUserByIdCustom(String userId);
-
-    void saveUserTransactional(SysUser user);
 }
