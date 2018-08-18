@@ -1,4 +1,13 @@
 package com.cier.girl.service;
 
-public class IUserService {
+import com.cier.girl.pojo.SysUser;
+
+public interface IUserService {
+    void insertUser(SysUser user);
+
+    void updateUser(SysUser user);
+
+    void deleteUser(String userId);
+
+    SysUser queryUserById(String userId);
 }
