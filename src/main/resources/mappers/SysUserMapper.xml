@@ -42,6 +42,12 @@
         from sys_user
         where id = #{id,jdbcType=VARCHAR}
     </select>
+    <select id="selectList" resultType="com.cier.girl.pojo.SysUser">
+        select
+        <include refid="Base_Column_List"/>
+        FROM
+        sys_user
+    </select>
     <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
         <!--
           WARNING - @mbggenerated

@@ -6,6 +6,7 @@ import com.cier.girl.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.Date;
@@ -60,5 +61,11 @@ public class MybatisCrudController {
     @ResponseBody
     public IMoocJSONResult queryUserById(String userId) {
         return IMoocJSONResult.ok(userService.queryUserById(userId));
+    }
+
+    @RequestMapping("/queryUserListPaged")
+    @ResponseBody
+    public IMoocJSONResult queryUserListPaged(@RequestParam(value = "pageNum") Integer pageNum,@RequestParam(value = "pageSize") Integer pageSize) {
+        return IMoocJSONResult.ok(userService.queryUserListPaged(pageNum,pageSize));
     }
 }

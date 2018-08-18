@@ -1,6 +1,7 @@
 package com.cier.girl.service;
 
 import com.cier.girl.pojo.SysUser;
+import com.github.pagehelper.PageInfo;
 
 public interface IUserService {
     void insertUser(SysUser user);
@@ -10,4 +11,10 @@ public interface IUserService {
     void deleteUser(String userId);
 
     SysUser queryUserById(String userId);
+
+    PageInfo queryUserListPaged(Integer page, Integer pageSize);
+
+    SysUser queryUserByIdCustom(String userId);
+
+    void saveUserTransactional(SysUser user);
 }
