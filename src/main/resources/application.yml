@@ -16,18 +16,18 @@ spring:
     show-sql: true
     properties:
       hibernate.format_sql: true
-#  freemarker:
-#    # 设置 ftl 文件路径
-#    # 关闭缓存，及时刷新，上线环境需要改为 true
-#    cache: false
-#    charset: UTF-8
-#    check-template-location: true
-#    content-type: text/html
-#    expose-request-attributes: true
-#    expose-session-attributes: true
-#    request-context-attribute: request
-#    suffix: .ftl
-#    template-loader-path: classpath:/templates
+  freemarker:
+    # 设置 ftl 文件路径
+    # 关闭缓存，及时刷新，上线环境需要改为 true
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    suffix: .ftl
+    template-loader-path: classpath:/templates
   thymeleaf:
     suffix: .html
     mode: HTML5
@@ -35,6 +35,11 @@ spring:
     content-type: text/html
     cache: false
 #    prefix: classpath:/templates 这句抽筋了
+  # 配置 i18n 资源文件，供 thymeleaf 读取
+  messages:
+    basename: i18n/messages
+    cache-seconds: 3600
+    encoding: UTF-8
 logging:
   file: girl.log
   level: error
