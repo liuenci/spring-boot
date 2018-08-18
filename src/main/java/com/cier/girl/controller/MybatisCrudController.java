@@ -46,4 +46,19 @@ public class MybatisCrudController {
 
         return IMoocJSONResult.ok("保存成功");
     }
+
+    @RequestMapping("/deleteUser")
+    @ResponseBody
+    public IMoocJSONResult deleteUser(String userId) {
+
+        userService.deleteUser(userId);
+
+        return IMoocJSONResult.ok("删除成功");
+    }
+
+    @RequestMapping("/queryUserById")
+    @ResponseBody
+    public IMoocJSONResult queryUserById(String userId) {
+        return IMoocJSONResult.ok(userService.queryUserById(userId));
+    }
 }

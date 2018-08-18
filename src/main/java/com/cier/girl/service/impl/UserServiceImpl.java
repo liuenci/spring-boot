@@ -22,11 +22,11 @@ public class UserServiceImpl implements IUserService{
 
     @Override
     public void deleteUser(String userId) {
-
+        sysUserMapper.deleteByPrimaryKey(userId);
     }
 
     @Override
     public SysUser queryUserById(String userId) {
-        return null;
+        return sysUserMapper.selectByPrimaryKey(userId);
     }
 }
