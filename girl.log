@@ -122,3 +122,280 @@
 2018-08-18 10:41:25.339  INFO 20144 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
 2018-08-18 10:41:25.341  INFO 20144 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
 2018-08-18 10:41:25.355  INFO 20144 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public com.cier.girl.pojo.User com.cier.girl.controller.UserController.hello()
+2018-08-18 10:41:57.087  INFO 23368 --- [main] com.cier.girl.GirlApplication            : Starting GirlApplication on cier-pc with PID 23368 (E:\IdeaProjects\girl\target\classes started by cier in E:\IdeaProjects\girl)
+2018-08-18 10:41:57.089  INFO 23368 --- [main] com.cier.girl.GirlApplication            : The following profiles are active: dev
+2018-08-18 10:41:57.750  INFO 23368 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5adb0db3: startup date [Sat Aug 18 10:41:57 CST 2018]; root of context hierarchy
+2018-08-18 10:41:59.729  INFO 23368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a28115a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-18 10:42:00.720  INFO 23368 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-08-18 10:42:00.760  INFO 23368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-18 10:42:00.760  INFO 23368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-18 10:42:01.000  INFO 23368 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-18 10:42:01.001  INFO 23368 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3251 ms
+2018-08-18 10:42:01.202  INFO 23368 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-18 10:42:01.210  INFO 23368 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-18 10:42:01.211  INFO 23368 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-18 10:42:01.211  INFO 23368 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-18 10:42:01.211  INFO 23368 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-18 10:42:02.783  INFO 23368 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-18 10:42:02.812  INFO 23368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-18 10:42:03.086  INFO 23368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-08-18 10:42:03.087  INFO 23368 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-18 10:42:03.089  INFO 23368 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-08-18 10:42:03.210  INFO 23368 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-18 10:42:03.537  INFO 23368 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-18 10:42:04.637  INFO 23368 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-08-18 10:42:04.785  INFO 23368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-18 10:42:05.878  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5adb0db3: startup date [Sat Aug 18 10:41:57 CST 2018]; root of context hierarchy
+2018-08-18 10:42:06.002  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls],methods=[GET]}" onto public java.util.List<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.getGirlList()
+2018-08-18 10:42:06.009  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls],methods=[POST]}" onto public com.cier.girl.pojo.Result<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.girlAdd(com.cier.girl.pojo.Girl,org.springframework.validation.BindingResult)
+2018-08-18 10:42:06.012  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[GET]}" onto public com.cier.girl.pojo.Girl com.cier.girl.controller.GirlController.findGirl(java.lang.Integer)
+2018-08-18 10:42:06.016  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[PUT]}" onto public com.cier.girl.pojo.Girl com.cier.girl.controller.GirlController.updateGirl(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-08-18 10:42:06.016  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[DELETE]}" onto public void com.cier.girl.controller.GirlController.deleteGirl(java.lang.Integer)
+2018-08-18 10:42:06.017  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/age/{age}],methods=[GET]}" onto public java.util.List<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.findGirlByAge(java.lang.Integer)
+2018-08-18 10:42:06.018  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/two],methods=[POST]}" onto public void com.cier.girl.controller.GirlController.insertTwo()
+2018-08-18 10:42:06.018  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/get_age/{id}],methods=[GET]}" onto public void com.cier.girl.controller.GirlController.getAge(java.lang.Integer) throws java.lang.Exception
+2018-08-18 10:42:06.021  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}/say],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayHello(java.lang.Integer)
+2018-08-18 10:42:06.021  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.say(org.springframework.ui.ModelMap)
+2018-08-18 10:42:06.022  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say1],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue1(java.lang.Integer)
+2018-08-18 10:42:06.022  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say2],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue2(java.lang.Integer)
+2018-08-18 10:42:06.023  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say3],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue3(java.lang.Integer)
+2018-08-18 10:42:06.024  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.cier.girl.pojo.User com.cier.girl.controller.UserController.hello()
+2018-08-18 10:42:06.024  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/in]}" onto public java.lang.String com.cier.girl.controller.ViewController.index()
+2018-08-18 10:42:06.026  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-18 10:42:06.027  INFO 23368 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-18 10:42:06.068  INFO 23368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-18 10:42:06.068  INFO 23368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-18 10:42:06.093  INFO 23368 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandle
+2018-08-18 10:42:06.133  INFO 23368 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-18 10:42:07.091  INFO 23368 --- [main] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-08-18 10:42:07.197  INFO 23368 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-18 10:42:07.283  INFO 23368 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-08-18 10:42:07.293  INFO 23368 --- [main] com.cier.girl.GirlApplication            : Started GirlApplication in 11.299 seconds (JVM running for 18.494)
+2018-08-18 10:42:08.660  INFO 23368 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-18 10:42:08.661  INFO 23368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-18 10:42:08.690  INFO 23368 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-08-18 10:45:35.390  INFO 23368 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-18 10:45:35.404  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls],methods=[GET]}" onto public java.util.List<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.getGirlList()
+2018-08-18 10:45:35.405  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls],methods=[POST]}" onto public com.cier.girl.pojo.Result<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.girlAdd(com.cier.girl.pojo.Girl,org.springframework.validation.BindingResult)
+2018-08-18 10:45:35.405  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[GET]}" onto public com.cier.girl.pojo.Girl com.cier.girl.controller.GirlController.findGirl(java.lang.Integer)
+2018-08-18 10:45:35.406  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[PUT]}" onto public com.cier.girl.pojo.Girl com.cier.girl.controller.GirlController.updateGirl(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-08-18 10:45:35.407  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[DELETE]}" onto public void com.cier.girl.controller.GirlController.deleteGirl(java.lang.Integer)
+2018-08-18 10:45:35.407  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/age/{age}],methods=[GET]}" onto public java.util.List<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.findGirlByAge(java.lang.Integer)
+2018-08-18 10:45:35.408  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/two],methods=[POST]}" onto public void com.cier.girl.controller.GirlController.insertTwo()
+2018-08-18 10:45:35.409  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/get_age/{id}],methods=[GET]}" onto public void com.cier.girl.controller.GirlController.getAge(java.lang.Integer) throws java.lang.Exception
+2018-08-18 10:45:35.412  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}/say],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayHello(java.lang.Integer)
+2018-08-18 10:45:35.413  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.say(org.springframework.ui.ModelMap)
+2018-08-18 10:45:35.414  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say1],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue1(java.lang.Integer)
+2018-08-18 10:45:35.415  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say2],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue2(java.lang.Integer)
+2018-08-18 10:45:35.417  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say3],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue3(java.lang.Integer)
+2018-08-18 10:45:35.418  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUserJson]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.UserController.getUser2()
+2018-08-18 10:45:35.419  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.cier.girl.pojo.User com.cier.girl.controller.UserController.getUser()
+2018-08-18 10:45:35.419  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/in]}" onto public java.lang.String com.cier.girl.controller.ViewController.index()
+2018-08-18 10:45:35.425  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-18 10:45:35.426  INFO 23368 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-18 10:46:37.028  INFO 23368 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-18 11:04:10.039  INFO 23368 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-18 11:04:10.049  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls],methods=[GET]}" onto public java.util.List<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.getGirlList()
+2018-08-18 11:04:10.051  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls],methods=[POST]}" onto public com.cier.girl.pojo.Result<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.girlAdd(com.cier.girl.pojo.Girl,org.springframework.validation.BindingResult)
+2018-08-18 11:04:10.052  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[GET]}" onto public com.cier.girl.pojo.Girl com.cier.girl.controller.GirlController.findGirl(java.lang.Integer)
+2018-08-18 11:04:10.053  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[PUT]}" onto public com.cier.girl.pojo.Girl com.cier.girl.controller.GirlController.updateGirl(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-08-18 11:04:10.054  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[DELETE]}" onto public void com.cier.girl.controller.GirlController.deleteGirl(java.lang.Integer)
+2018-08-18 11:04:10.054  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/age/{age}],methods=[GET]}" onto public java.util.List<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.findGirlByAge(java.lang.Integer)
+2018-08-18 11:04:10.055  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/two],methods=[POST]}" onto public void com.cier.girl.controller.GirlController.insertTwo()
+2018-08-18 11:04:10.057  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/get_age/{id}],methods=[GET]}" onto public void com.cier.girl.controller.GirlController.getAge(java.lang.Integer) throws java.lang.Exception
+2018-08-18 11:04:10.060  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}/say],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayHello(java.lang.Integer)
+2018-08-18 11:04:10.060  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.say(org.springframework.ui.ModelMap)
+2018-08-18 11:04:10.061  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say1],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue1(java.lang.Integer)
+2018-08-18 11:04:10.061  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say2],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue2(java.lang.Integer)
+2018-08-18 11:04:10.062  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say3],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue3(java.lang.Integer)
+2018-08-18 11:04:10.063  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getResource]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.UserController.getResource()
+2018-08-18 11:04:10.063  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUserJson]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.UserController.getUser2()
+2018-08-18 11:04:10.064  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.cier.girl.pojo.User com.cier.girl.controller.UserController.getUser()
+2018-08-18 11:04:10.065  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/in]}" onto public java.lang.String com.cier.girl.controller.ViewController.index()
+2018-08-18 11:04:10.072  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-18 11:04:10.073  INFO 23368 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-18 11:04:10.346 ERROR 23368 --- [http-nio-8080-exec-9] com.cier.girl.handle.ExceptionHandle     : [系统异常]{}
+
+org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: No serializer found for class org.springframework.context.expression.StandardBeanExpressionResolver and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS); nested exception is com.fasterxml.jackson.databind.JsonMappingException: No serializer found for class org.springframework.context.expression.StandardBeanExpressionResolver and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: com.cier.girl.pojo.IMoocJSONResult["data"]->com.cier.girl.pojo.Resource$$EnhancerBySpringCGLIB$$2c35f3df["$$beanFactory"]->org.springframework.beans.factory.support.DefaultListableBeanFactory["beanExpressionResolver"])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:293) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:106) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:231) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:174) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:81) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:113) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: No serializer found for class org.springframework.context.expression.StandardBeanExpressionResolver and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: com.cier.girl.pojo.IMoocJSONResult["data"]->com.cier.girl.pojo.Resource$$EnhancerBySpringCGLIB$$2c35f3df["$$beanFactory"]->org.springframework.beans.factory.support.DefaultListableBeanFactory["beanExpressionResolver"])
+	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:284) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.SerializerProvider.mappingException(SerializerProvider.java:1110) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.SerializerProvider.reportMappingProblem(SerializerProvider.java:1135) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:69) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:32) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:704) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:689) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:155) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:704) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:689) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:155) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:704) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:689) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:155) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:292) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1429) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:951) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:286) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 53 common frames omitted
+
+2018-08-18 11:04:10.362  WARN 23368 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: No serializer found for class org.springframework.context.expression.StandardBeanExpressionResolver and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS); nested exception is com.fasterxml.jackson.databind.JsonMappingException: No serializer found for class org.springframework.context.expression.StandardBeanExpressionResolver and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: com.cier.girl.pojo.IMoocJSONResult["data"]->com.cier.girl.pojo.Resource$$EnhancerBySpringCGLIB$$2c35f3df["$$beanFactory"]->org.springframework.beans.factory.support.DefaultListableBeanFactory["beanExpressionResolver"])
+2018-08-18 11:05:11.370 ERROR 23368 --- [http-nio-8080-exec-1] com.cier.girl.handle.ExceptionHandle     : [系统异常]{}
+
+org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: No serializer found for class org.springframework.context.expression.StandardBeanExpressionResolver and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS); nested exception is com.fasterxml.jackson.databind.JsonMappingException: No serializer found for class org.springframework.context.expression.StandardBeanExpressionResolver and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: com.cier.girl.pojo.IMoocJSONResult["data"]->com.cier.girl.pojo.Resource$$EnhancerBySpringCGLIB$$2c35f3df["$$beanFactory"]->org.springframework.beans.factory.support.DefaultListableBeanFactory["beanExpressionResolver"])
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:293) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:106) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:231) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:174) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:81) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:113) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.__invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: No serializer found for class org.springframework.context.expression.StandardBeanExpressionResolver and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: com.cier.girl.pojo.IMoocJSONResult["data"]->com.cier.girl.pojo.Resource$$EnhancerBySpringCGLIB$$2c35f3df["$$beanFactory"]->org.springframework.beans.factory.support.DefaultListableBeanFactory["beanExpressionResolver"])
+	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:284) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.SerializerProvider.mappingException(SerializerProvider.java:1110) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.SerializerProvider.reportMappingProblem(SerializerProvider.java:1135) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:69) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:32) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:704) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:689) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:155) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:704) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:689) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:155) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:704) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:689) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:155) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:292) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1429) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:951) ~[jackson-databind-2.8.11.2.jar:2.8.11.2]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:286) ~[spring-web-4.3.18.RELEASE.jar:4.3.18.RELEASE]
+	... 53 common frames omitted
+
+2018-08-18 11:05:11.389  WARN 23368 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved exception caused by Handler execution: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: No serializer found for class org.springframework.context.expression.StandardBeanExpressionResolver and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS); nested exception is com.fasterxml.jackson.databind.JsonMappingException: No serializer found for class org.springframework.context.expression.StandardBeanExpressionResolver and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: com.cier.girl.pojo.IMoocJSONResult["data"]->com.cier.girl.pojo.Resource$$EnhancerBySpringCGLIB$$2c35f3df["$$beanFactory"]->org.springframework.beans.factory.support.DefaultListableBeanFactory["beanExpressionResolver"])
+2018-08-18 11:05:23.979  INFO 23368 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-18 11:49:51.730  INFO 23368 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-18 11:49:51.744  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls],methods=[GET]}" onto public java.util.List<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.getGirlList()
+2018-08-18 11:49:51.745  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls],methods=[POST]}" onto public com.cier.girl.pojo.Result<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.girlAdd(com.cier.girl.pojo.Girl,org.springframework.validation.BindingResult)
+2018-08-18 11:49:51.746  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[GET]}" onto public com.cier.girl.pojo.Girl com.cier.girl.controller.GirlController.findGirl(java.lang.Integer)
+2018-08-18 11:49:51.747  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[PUT]}" onto public com.cier.girl.pojo.Girl com.cier.girl.controller.GirlController.updateGirl(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-08-18 11:49:51.748  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[DELETE]}" onto public void com.cier.girl.controller.GirlController.deleteGirl(java.lang.Integer)
+2018-08-18 11:49:51.750  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/age/{age}],methods=[GET]}" onto public java.util.List<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.findGirlByAge(java.lang.Integer)
+2018-08-18 11:49:51.751  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/two],methods=[POST]}" onto public void com.cier.girl.controller.GirlController.insertTwo()
+2018-08-18 11:49:51.752  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/get_age/{id}],methods=[GET]}" onto public void com.cier.girl.controller.GirlController.getAge(java.lang.Integer) throws java.lang.Exception
+2018-08-18 11:49:51.754  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}/say],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayHello(java.lang.Integer)
+2018-08-18 11:49:51.754  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.say(org.springframework.ui.ModelMap)
+2018-08-18 11:49:51.755  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say1],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue1(java.lang.Integer)
+2018-08-18 11:49:51.757  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say2],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue2(java.lang.Integer)
+2018-08-18 11:49:51.757  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say3],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue3(java.lang.Integer)
+2018-08-18 11:49:51.759  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getResource]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.UserController.getResource()
+2018-08-18 11:49:51.759  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUserJson]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.UserController.getUser2()
+2018-08-18 11:49:51.760  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.cier.girl.pojo.User com.cier.girl.controller.UserController.getUser()
+2018-08-18 11:49:51.760  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/in]}" onto public java.lang.String com.cier.girl.controller.ViewController.index()
+2018-08-18 11:49:51.769  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-18 11:49:51.770  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-18 11:49:51.782  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ftl/index]}" onto public java.lang.String com.cier.girl.controller.FreemarkerController.index(org.springframework.ui.ModelMap)
+2018-08-18 11:49:51.782  INFO 23368 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ftl/center]}" onto public java.lang.String com.cier.girl.controller.FreemarkerController.center()
+2018-08-18 11:49:52.477  INFO 23368 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-18 11:49:52.477  INFO 23368 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
