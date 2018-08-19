@@ -11986,3 +11986,81 @@ Caused by: java.lang.NoSuchMethodError: redis.clients.jedis.JedisPool.<init>(Lor
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1630) ~[spring-beans-4.3.18.RELEASE.jar:4.3.18.RELEASE]
 	... 48 common frames omitted
 
+2018-08-18 22:39:03.673  INFO 24032 --- [main] com.cier.girl.GirlApplication            : Starting GirlApplication on cier-pc with PID 24032 (E:\IdeaProjects\girl\target\classes started by cier in E:\IdeaProjects\girl)
+2018-08-18 22:39:03.689  INFO 24032 --- [main] com.cier.girl.GirlApplication            : The following profiles are active: dev
+2018-08-18 22:39:04.368  INFO 24032 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fffff43: startup date [Sat Aug 18 22:39:04 CST 2018]; root of context hierarchy
+2018-08-18 22:39:06.773  INFO 24032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-08-18 22:39:06.949  INFO 24032 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-08-18 22:39:07.019  INFO 24032 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.cier.girl.service.GirlRepository.
+2018-08-18 22:39:08.277  INFO 24032 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4a7497a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-18 22:39:09.429  INFO 24032 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2018-08-18 22:39:09.490  INFO 24032 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-18 22:39:09.491  INFO 24032 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-18 22:39:10.014  INFO 24032 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-18 22:39:10.015  INFO 24032 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5647 ms
+2018-08-18 22:39:10.284  INFO 24032 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-08-18 22:39:10.293  INFO 24032 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-18 22:39:10.293  INFO 24032 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-18 22:39:10.294  INFO 24032 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-18 22:39:10.294  INFO 24032 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-18 22:39:11.504  INFO 24032 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-18 22:39:11.539  INFO 24032 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-18 22:39:11.800  INFO 24032 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2018-08-18 22:39:11.802  INFO 24032 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-18 22:39:11.818  INFO 24032 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2018-08-18 22:39:11.922  INFO 24032 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-18 22:39:12.346  INFO 24032 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-18 22:39:13.567  INFO 24032 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2018-08-18 22:39:13.715  INFO 24032 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-18 22:39:16.380  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3fffff43: startup date [Sat Aug 18 22:39:04 CST 2018]; root of context hierarchy
+2018-08-18 22:39:16.498  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/err/error]}" onto public java.lang.String com.cier.girl.controller.ErrorController.error()
+2018-08-18 22:39:16.500  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/err/ajaxerror]}" onto public java.lang.String com.cier.girl.controller.ErrorController.ajaxerror()
+2018-08-18 22:39:16.501  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/err/getAjaxerror]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.ErrorController.getAjaxerror()
+2018-08-18 22:39:16.504  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ftl/index]}" onto public java.lang.String com.cier.girl.controller.FreemarkerController.index(org.springframework.ui.ModelMap)
+2018-08-18 22:39:16.504  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/ftl/center]}" onto public java.lang.String com.cier.girl.controller.FreemarkerController.center()
+2018-08-18 22:39:16.516  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls],methods=[GET]}" onto public java.util.List<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.getGirlList()
+2018-08-18 22:39:16.518  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls],methods=[POST]}" onto public com.cier.girl.pojo.Result<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.girlAdd(com.cier.girl.pojo.Girl,org.springframework.validation.BindingResult)
+2018-08-18 22:39:16.520  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[GET]}" onto public com.cier.girl.pojo.Girl com.cier.girl.controller.GirlController.findGirl(java.lang.Integer)
+2018-08-18 22:39:16.522  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[PUT]}" onto public com.cier.girl.pojo.Girl com.cier.girl.controller.GirlController.updateGirl(java.lang.Integer,java.lang.String,java.lang.Integer)
+2018-08-18 22:39:16.523  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/{id}],methods=[DELETE]}" onto public void com.cier.girl.controller.GirlController.deleteGirl(java.lang.Integer)
+2018-08-18 22:39:16.523  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/age/{age}],methods=[GET]}" onto public java.util.List<com.cier.girl.pojo.Girl> com.cier.girl.controller.GirlController.findGirlByAge(java.lang.Integer)
+2018-08-18 22:39:16.524  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/two],methods=[POST]}" onto public void com.cier.girl.controller.GirlController.insertTwo()
+2018-08-18 22:39:16.524  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/girls/get_age/{id}],methods=[GET]}" onto public void com.cier.girl.controller.GirlController.getAge(java.lang.Integer) throws java.lang.Exception
+2018-08-18 22:39:16.526  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.say(org.springframework.ui.ModelMap)
+2018-08-18 22:39:16.526  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{id}/say],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayHello(java.lang.Integer)
+2018-08-18 22:39:16.526  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say1],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue1(java.lang.Integer)
+2018-08-18 22:39:16.527  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say3],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue3(java.lang.Integer)
+2018-08-18 22:39:16.527  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/say2],methods=[GET]}" onto public java.lang.String com.cier.girl.controller.HelloController.sayValue2(java.lang.Integer)
+2018-08-18 22:39:16.528  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mybatis/saveUser]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.MybatisCrudController.saveUser() throws java.lang.Exception
+2018-08-18 22:39:16.529  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mybatis/updateUser]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.MybatisCrudController.updateUser()
+2018-08-18 22:39:16.530  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mybatis/deleteUser]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.MybatisCrudController.deleteUser(java.lang.String)
+2018-08-18 22:39:16.530  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mybatis/queryUserById]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.MybatisCrudController.queryUserById(java.lang.String)
+2018-08-18 22:39:16.531  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/mybatis/queryUserListPaged]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.MybatisCrudController.queryUserListPaged(java.lang.Integer,java.lang.Integer)
+2018-08-18 22:39:16.532  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/test]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.RedisController.test()
+2018-08-18 22:39:16.535  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/th/index]}" onto public java.lang.String com.cier.girl.controller.ThymeleafController.index(org.springframework.ui.ModelMap)
+2018-08-18 22:39:16.535  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/th/test]}" onto public java.lang.String com.cier.girl.controller.ThymeleafController.test(org.springframework.ui.ModelMap)
+2018-08-18 22:39:16.535  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/th/center]}" onto public java.lang.String com.cier.girl.controller.ThymeleafController.center()
+2018-08-18 22:39:16.536  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/th/postform],methods=[POST]}" onto public java.lang.String com.cier.girl.controller.ThymeleafController.postform(com.cier.girl.pojo.User)
+2018-08-18 22:39:16.536  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/th/showerror]}" onto public java.lang.String com.cier.girl.controller.ThymeleafController.showerror(com.cier.girl.pojo.User)
+2018-08-18 22:39:16.537  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getResource]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.UserController.getResource()
+2018-08-18 22:39:16.537  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUser]}" onto public com.cier.girl.pojo.User com.cier.girl.controller.UserController.getUser()
+2018-08-18 22:39:16.538  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/getUserJson]}" onto public com.cier.girl.pojo.IMoocJSONResult com.cier.girl.controller.UserController.getUser2()
+2018-08-18 22:39:16.538  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/in]}" onto public java.lang.String com.cier.girl.controller.ViewController.index()
+2018-08-18 22:39:16.542  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-18 22:39:16.542  INFO 24032 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-18 22:39:16.588  INFO 24032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-18 22:39:16.588  INFO 24032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-18 22:39:16.617  INFO 24032 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in exceptionHandle
+2018-08-18 22:39:16.653  INFO 24032 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-18 22:39:18.030  INFO 24032 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-08-18 22:39:18.311  INFO 24032 --- [main] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-08-18 22:39:18.409  INFO 24032 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-18 22:39:18.587  INFO 24032 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2018-08-18 22:39:18.617  INFO 24032 --- [main] com.cier.girl.GirlApplication            : Started GirlApplication in 16.739 seconds (JVM running for 24.054)
+2018-08-18 22:39:29.796  INFO 24032 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-18 22:39:29.796  INFO 24032 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-18 22:39:29.836  INFO 24032 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2018-08-18 22:43:57.376  INFO 24032 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-18 22:46:15.209  INFO 24032 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
